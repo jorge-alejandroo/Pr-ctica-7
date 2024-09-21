@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para mantener el pie de página abajo */
+}
+
+img {
+    border-radius: 15px;
+}
+
+/* Encabezado */
+#encabezado {
+    background-color: #fff;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Img/logo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px 250px;
+    position: relative;
+}
+
+#menu {
+    width: 100%;
+    height: 60px;
+    background-color: #2a3e55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 201px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #ffffff;
+    color: #2a3e55;
+    border-radius: 20px;
+}
+
+/* Sección de datos con fondo */
+.parent-container {
+    background-image: url('../Img/fondo.jpeg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    flex: 1; /* Para ocupar el espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor para la información */
+.container {
+    margin-top: 70px;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0.9;
+    margin-bottom: 105px; /* Añadir margen inferior para que el pie no cubra contenido */
+}
+
+/* Pie de página fijo */
+.piePagina {
+    width: 100%;
+    height: 80px;
+    background: #2a3e55;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.piePagina p {
+    margin: 0;
+}
+
+
+
+
+
